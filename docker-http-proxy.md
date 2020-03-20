@@ -5,7 +5,9 @@
 
 ##### 加入如下配置
 
-proxy-addr为代理IP或域名；proxy-port为代理端口；NO_PROXY后面接不需要代理的仓库的域名或者IP，以英文逗号结尾
+proxy-addr为代理IP或域名；
+proxy-port为代理端口；
+NO_PROXY后面接不需要代理的仓库的域名或者IP;
 
 [Service]
 Environment="HTTP_PROXY=http://proxy-addr:proxy-port" "HTTPS_PROXY=http://proxy-addr:proxy-port" "NO_PROXY=localhost,127.0.0.1,docker-registry.somecorporation.com"
