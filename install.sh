@@ -31,4 +31,4 @@ systemctl daemon-reload
 systemctl enable docker
 systemctl start docker
 
-docker --version
+docker info
