@@ -23,6 +23,13 @@ cat > /etc/docker/daemon.json <<EOF
 }
 EOF
 
+cat >>  /etc/sysctl.conf <<EOF
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF
+
+sysctl -p
+
 #创建docker目录
 mkdir -p /data/docker
 
