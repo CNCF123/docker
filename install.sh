@@ -1,5 +1,8 @@
 #!/bin/bash
 
+curl -o /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo
+curl -o /etc/yum.repos.d/epel.repo        https://mirrors.aliyun.com/repo/epel-7.repo
+
 yum -y install yum-utils device-mapper-persistent-data lvm2
 yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
 yum list docker-ce.x86_64 --showduplicates | sort -r
