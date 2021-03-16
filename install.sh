@@ -6,7 +6,6 @@ yum list docker-ce.x86_64 --showduplicates | sort -r
 
 yum install -y docker-ce-19.03.15 docker-ce-cli-19.03.15 containerd.io
 
-
 mkdir -p /etc/docker
 cat > /etc/docker/daemon.json <<EOF 
 {
