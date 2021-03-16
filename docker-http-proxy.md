@@ -1,5 +1,4 @@
 ### docker添加http代理
-该方法适用于Debian/Ubuntu，RedHat/CentOS系统。修改配置后，会持续生效，其中的设置将覆盖docker.service中的选项
 ##### 添加网络代理配置文件
 `vim /etc/systemd/system/docker.service.d/http-proxy.conf`
 
