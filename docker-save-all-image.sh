@@ -7,7 +7,6 @@ IMAGES=$(docker images --format '{{.Repository}}:{{.Tag}}')
 
 for element in ${IMAGES[@]}
 do
-
   echo "saving ${element} ..."
   docker save ${element} >> docker-all-image.tar
   echo "${element} saved"
